@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - bygi/devops-toolkit:1.2.6
