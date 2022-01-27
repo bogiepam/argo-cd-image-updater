@@ -6,4 +6,4 @@ resources:
 namespace: production
 images:
   - name: bygi/devops-toolkit
-    newTag: prod.1.0
+    newTag: prod.1.2
