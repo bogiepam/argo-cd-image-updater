@@ -6,4 +6,4 @@ resources:
 namespace: staging
 images:
   - name: bygi/devops-toolkit
-    newTag: 1.2.11
+    newTag: 1.2.12
