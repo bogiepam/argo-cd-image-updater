@@ -3,6 +3,3 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
-images:
-  - name: bygi/devops-toolkit
-    newTag: 1.2.8

@@ -4,6 +4,3 @@ resources:
   - ../../base
   - ingress.yaml
 namespace: production
-images:
-  - name: bygi/devops-toolkit
-    newTag: 1.2.8
