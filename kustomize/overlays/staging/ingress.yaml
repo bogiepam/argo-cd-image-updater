@@ -3,9 +3,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: devops-toolkit
+  name: devops-toolkit-staging
   labels:
-    app: devops-toolkit
+    app: devops-toolkit-staging
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
@@ -20,7 +20,7 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-           name: devops-toolkit
+           name: devops-toolkit-staging
            port:
              number: 80
-    host: devops-toolkit.127.0.0.1.nip.io
+    host: devops-toolkit-staging.127.0.0.1.nip.io
