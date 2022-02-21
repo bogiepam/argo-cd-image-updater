@@ -6,13 +6,14 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
-    argocd-image-updater.argoproj.io/image-list: demoapp=bygi/devops-toolkit
-    argocd-image-updater.argoproj.io/demoapp.update-strategy: latest
-    #argocd-image-updater.argoproj.io/bygi/devops-toolkit.allow-tags: regexp:^staging-[0-9a-zA-Z]+$
-    argocd-image-updater.argoproj.io/demoapp.allow-tags: regexp:^prod.[0-9]+.[0-9]+$
-    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
-    argocd-image-updater.argoproj.io/write-back-target: kustomization:../../overlays/production
-    argocd-image-updater.argoproj.io/git-branch: main
+    argocd.argoproj.io/sync-wave: "1"
+    #argocd-image-updater.argoproj.io/image-list: demoapp=bygi/devops-toolkit
+    #argocd-image-updater.argoproj.io/demoapp.update-strategy: semver
+    ##argocd-image-updater.argoproj.io/bygi/devops-toolkit.allow-tags: regexp:^staging-[0-9a-zA-Z]+$
+    #argocd-image-updater.argoproj.io/demoapp.allow-tags: regexp:^prod.[0-9]+.[0-9]+$
+    #argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
+    #argocd-image-updater.argoproj.io/write-back-target: kustomization:../../overlays/production
+    #argocd-image-updater.argoproj.io/git-branch: main
 spec:
   project: production
   source:
