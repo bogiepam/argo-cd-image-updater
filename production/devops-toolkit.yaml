@@ -25,6 +25,6 @@ spec:
     namespace: production
   syncPolicy:
     automated:
-      selfHeal: false
-      prune: false
-      allowEmpty: false
+      selfHeal: true
+      prune: true
+      allowEmpty: true
