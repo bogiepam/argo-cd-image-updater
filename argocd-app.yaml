@@ -64,9 +64,9 @@ spec:
     namespace: production
   syncPolicy:
     automated:
-      selfHeal: true
-      prune: true
-      allowEmpty: true
+      selfHeal: false
+      prune: false
+      allowEmpty: false
 
 ---
 
@@ -88,6 +88,6 @@ spec:
     namespace: staging
   syncPolicy:
     automated:
-      selfHeal: true
-      prune: true
-      allowEmpty: true
+      selfHeal: false
+      prune: false
+      allowEmpty: false
